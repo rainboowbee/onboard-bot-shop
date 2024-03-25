@@ -15,14 +15,29 @@ export default defineConfig({
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Добро пожаловать',
+          title: '<b>ку сладкий 👻</b>',
           description:
-            "Этот проект направлен на изучение языков программирования",
+            "Здесь ты можешь посмотреть характеристику каждого человека из нашей компании (на мой взгляд🤭)",
           button: 'Далее',
+        },
+
+        {
+          media: {
+            type: 'video',
+            src: import('./assets/videos/spongebob.mp4'),
+            poster: import('./assets/img/spongebob_poster.webp'),
+          },
+          shape: 'rounded',
+          pagination: 'count',
+          title: 'Videos',
+          description:
+            "Typically, video starts <b>automatically</b><br><br>However, on iOS, it will only autoplay upon any prior tap on the page ('Next' button doesn't count). If video doesn't autoplay, user will see preview and pretty animation, inviting them to tap to play the video",
+          button: 'Next',
         },
         
       ],
     },
+
 
     // paywall
     {
