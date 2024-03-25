@@ -24,8 +24,8 @@ export default defineConfig({
         {
           media: {
             type: 'video',
-            src: import('./assets/videos/spongebob.mp4'),
-            poster: import('./assets/img/spongebob_poster.webp'),
+            src: import('./assets/videos/videoone.mp4'),
+            
           },
           shape: 'rounded',
           pagination: 'count',
