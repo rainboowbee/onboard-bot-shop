@@ -34,6 +34,55 @@ export default defineConfig({
             "Typically, video starts <b>automatically</b><br><br>However, on iOS, it will only autoplay upon any prior tap on the page ('Next' button doesn't count). If video doesn't autoplay, user will see preview and pretty animation, inviting them to tap to play the video",
           button: 'Next',
         },
+
+        // form
+
+        {
+          extends: 'form', // note, it's important to extend from 'form' here
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/duck_spy.tgs'),
+            size: 150,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Forms',
+          description: 'User fills in the form – the bot receives the data',
+          form: [
+            {
+              id: 'checkbox_option_1',
+              placeholder: 'Option 1',
+              type: 'checkbox',
+              correct: true,
+            },
+            {
+              id: 'checkbox_option_2',
+              placeholder: 'Option 2',
+              type: 'checkbox',
+              correct: false,
+            },
+            {
+              id: 'checkbox_option_3',
+              placeholder: 'Option 3',
+              type: 'checkbox',
+              correct: false,
+            },
+          ],
+          button: 'Next',
+
+          onClick: function() {
+            const checkboxes = document.querySelectorAll<HTMLInputElement>('input[type="checkbox"]');
+            checkboxes.forEach(function(checkbox) {
+              if (checkbox.checked) {
+                if (checkbox.getAttribute('correct') === 'true') {
+                  (checkbox.parentNode as HTMLElement)?.setAttribute('style', 'color: green');
+                } else {
+                  (checkbox.parentNode as HTMLElement)?.setAttribute('style', 'color: green');
+                }
+              }
+            });
+          },
+        },
         
       ],
     },
