@@ -24,7 +24,7 @@ export default defineConfig({
         {
           media: {
             type: 'video',
-            src: import('./assets/videos/videoone.mp4'),
+            src: import('./assets/videos/aaa.mp4'),
             
           },
           shape: 'rounded',
