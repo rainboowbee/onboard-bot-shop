@@ -17,14 +17,28 @@ export default defineConfig({
           pagination: 'count',
           title: '<b>ку сладкий 👻</b>',
           description:
-            "Здесь ты можешь посмотреть характеристику каждого человека из нашей компании (на мой взгляд🤭)",
+            "Тут ты можешь посмотреть описание своего персонажа, а так же затеститить приложение в телеге",
           button: 'Далее',
         },
 
         {
           media: {
+            type: 'sticker',
+            src: import('./assets/stickers/cat_hello.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Как эта штука работает?',
+          description:
+            "Снизу есть кнопка которая переносит на следующую страницу (так же можно воспользоваться свайпом).",
+          button: 'Погнали',
+        },
+
+        {
+          media: {
             type: 'video',
-            src: import('./assets/videos/aaa.mp4'),
+            src: import('./assets/videos/QLs0.mp4'),
             
           },
           shape: 'rounded',
@@ -35,55 +49,6 @@ export default defineConfig({
           button: 'Next',
         },
 
-        // form
-
-        {
-          extends: 'form', // note, it's important to extend from 'form' here
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_spy.tgs'),
-            size: 150,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Forms',
-          description: 'User fills in the form – the bot receives the data',
-          form: [
-            {
-              id: 'checkbox_option_1',
-              placeholder: 'Option 1',
-              type: 'checkbox',
-              correct: true,
-            },
-            {
-              id: 'checkbox_option_2',
-              placeholder: 'Option 2',
-              type: 'checkbox',
-              correct: false,
-            },
-            {
-              id: 'checkbox_option_3',
-              placeholder: 'Option 3',
-              type: 'checkbox',
-              correct: false,
-            },
-          ],
-          button: 'Next',
-
-          onClick: function() {
-            const checkboxes = document.querySelectorAll<HTMLInputElement>('input[type="checkbox"]');
-            checkboxes.forEach(function(checkbox) {
-              if (checkbox.checked) {
-                if (checkbox.getAttribute('correct') === 'true') {
-                  (checkbox.parentNode as HTMLElement)?.setAttribute('style', 'color: green');
-                } else {
-                  (checkbox.parentNode as HTMLElement)?.setAttribute('style', 'color: green');
-                }
-              }
-            });
-          },
-        },
-        
       ],
     },
 
