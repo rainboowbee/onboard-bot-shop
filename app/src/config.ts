@@ -39,7 +39,7 @@ export default defineConfig({
           media: {
             type: 'video',
             src: import('./assets/videos/sendi.mp4'),
-            style: 'aspect-ratio: 400/287',
+            style: 'aspect-ratio: 810/936',
           },
           shape: 'rounded',
           pagination: 'count',
@@ -53,7 +53,7 @@ export default defineConfig({
           media: {
             type: 'video',
             src: import('./assets/videos/patrik.mp4'),
-            style: 'aspect-ratio: 400/287',
+            style: 'aspect-ratio: 810/936',
           },
           shape: 'rounded',
           pagination: 'count',
@@ -90,6 +90,36 @@ export default defineConfig({
           title: '<b>Маша</b>',
           description:
             "Маша, как и Планктон, иногда может забывать о других в своем стремлении к своим собственным целям. Но кто знает, может быть, она просто думает о следующем хитром плане, как стать еще лучше в фотографии",
+            
+          button: 'Далее',
+        },
+
+        {
+          media: {
+            type: 'video',
+            src: import('./assets/videos/krabs.mp4'),
+            style: 'aspect-ratio: 810/936',
+          },
+          shape: 'rounded',
+          pagination: 'count',
+          title: '<b>Саня</b>',
+          description:
+            "Саня - наш Мистер Крабс в жизни. Он всегда в движении, обладает острым умом и обожает свою машину так же, как и Мистер Крабс обожает свои доллары!",
+            
+          button: 'Далее',
+        },
+
+        {
+          media: {
+            type: 'video',
+            src: import('./assets/videos/GsaH.mp4'),
+            style: 'aspect-ratio: 480/360',
+          },
+          shape: 'rounded',
+          pagination: 'count',
+          title: '<b>Ваня</b>',
+          description:
+            "Ваня - наша версия Гари в общении. Несмотря на молчаливость, у него всегда есть что рассказать и обсудить. Может быть, он просто ждет правильного времени, чтобы выразить свои мудрые мысли?",
             
           button: 'Далее',
         },
