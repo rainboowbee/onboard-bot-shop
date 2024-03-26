@@ -24,7 +24,7 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/cat_hello.tgs'),
+            src: import('./assets/stickers/AnimatedSticker.tgs'),
             size: 250,
           },
           shape: 'square',
