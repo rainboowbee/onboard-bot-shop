@@ -39,14 +39,14 @@ export default defineConfig({
           media: {
             type: 'video',
             src: import('./assets/videos/QLs0.mp4'),
-            
+            style: 'aspect-ratio: 400/287',
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'Videos',
+          title: 'Катя',
           description:
-            "Typically, video starts <b>automatically</b><br><br>However, on iOS, it will only autoplay upon any prior tap on the page ('Next' button doesn't count). If video doesn't autoplay, user will see preview and pretty animation, inviting them to tap to play the video",
-          button: 'Next',
+            "Мама Катя как и сэнди всегда готова помочь. Не даст себя в обиду, а сразу даст пизды",
+          button: 'Далее',
         },
 
       ],
