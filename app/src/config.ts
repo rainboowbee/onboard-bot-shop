@@ -43,7 +43,7 @@ export default defineConfig({
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'Катя',
+          title: '<b>Катя</b>',
           description:
             "Мама Катя как и сэнди всегда готова помочь. Не даст себя в обиду, а сразу даст пизды",
           button: 'Далее',
@@ -57,9 +57,24 @@ export default defineConfig({
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'Вика',
+          title: '<b>Вика</b>',
           description:
             "Она может не привлекать внимание своей работой, но всегда выглядит потрясающе и предана своим друзьям. Люит пригубить пивка, а именно белого феникса",
+            
+          button: 'Далее',
+        },
+
+        {
+          media: {
+            type: 'video',
+            src: import('./assets/videos/skvidvard.mp4'),
+            
+          },
+          shape: 'rounded',
+          pagination: 'count',
+          title: '<b>Алина</b>',
+          description:
+            "С ее творческими наклонностями и преданностью друзьям, она может быть немного мрачноватой на первый взгляд, но она всегда готова удивить вас своим талантом и юмором",
             
           button: 'Далее',
         },
