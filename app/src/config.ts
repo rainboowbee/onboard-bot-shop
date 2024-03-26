@@ -68,7 +68,7 @@ export default defineConfig({
           media: {
             type: 'video',
             src: import('./assets/videos/skvidvard.mp4'),
-            
+            style: 'aspect-ratio: 780/936',
           },
           shape: 'rounded',
           pagination: 'count',
