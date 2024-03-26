@@ -52,7 +52,7 @@ export default defineConfig({
         {
           media: {
             type: 'video',
-            src: import('./assets/videos/5OoH.gif'),
+            src: import('./assets/videos/5OoH.mp4'),
             style: 'aspect-ratio: 400/287',
           },
           shape: 'rounded',
