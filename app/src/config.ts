@@ -49,6 +49,21 @@ export default defineConfig({
           button: 'Далее',
         },
 
+        {
+          media: {
+            type: 'video',
+            src: import('./assets/videos/5OoH.gif'),
+            style: 'aspect-ratio: 400/287',
+          },
+          shape: 'rounded',
+          pagination: 'count',
+          title: 'Вика',
+          description:
+            "Она может не привлекать внимание своей работой, но всегда выглядит потрясающе и предана своим друзьям. Люит пригубить пивка, а именно белого феникса",
+            
+          button: 'Далее',
+        },
+
       ],
     },
 
