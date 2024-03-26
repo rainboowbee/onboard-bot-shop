@@ -38,7 +38,7 @@ export default defineConfig({
         {
           media: {
             type: 'video',
-            src: import('./assets/videos/QLs0.mp4'),
+            src: import('./assets/videos/sendi.mp4'),
             style: 'aspect-ratio: 400/287',
           },
           shape: 'rounded',
@@ -52,7 +52,7 @@ export default defineConfig({
         {
           media: {
             type: 'video',
-            src: import('./assets/videos/5OoH.mp4'),
+            src: import('./assets/videos/patrik.mp4'),
             style: 'aspect-ratio: 400/287',
           },
           shape: 'rounded',
@@ -68,13 +68,28 @@ export default defineConfig({
           media: {
             type: 'video',
             src: import('./assets/videos/skvidvard.mp4'),
-            style: 'aspect-ratio: 780/936',
+            style: 'aspect-ratio: 810/936',
           },
           shape: 'rounded',
           pagination: 'count',
           title: '<b>Алина</b>',
           description:
             "С ее творческими наклонностями и преданностью друзьям, она может быть немного мрачноватой на первый взгляд, но она всегда готова удивить вас своим талантом и юмором",
+            
+          button: 'Далее',
+        },
+
+        {
+          media: {
+            type: 'video',
+            src: import('./assets/videos/plankton.mp4'),
+            style: 'aspect-ratio: 810/936',
+          },
+          shape: 'rounded',
+          pagination: 'count',
+          title: '<b>Маша</b>',
+          description:
+            "Маша, как и Планктон, иногда может забывать о других в своем стремлении к своим собственным целям. Но кто знает, может быть, она просто думает о следующем хитром плане, как стать еще лучше в фотографии",
             
           button: 'Далее',
         },
